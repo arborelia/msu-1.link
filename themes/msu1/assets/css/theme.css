@@ -47,10 +47,10 @@ aside {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #85a;
+    color: #58d;
 }
 .entry-title a {
-    color: #85a !important;
+    color: #58d !important;
 }
 
 /* Links */
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header {
-    border-bottom: 1px solid #daf;
+    border-bottom: 1px solid #adf;
 }
 
 #content img {

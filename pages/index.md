@@ -20,3 +20,11 @@ This site curates a selection of packs, including those made by me ([arborelia][
 [alttpr]: https://alttpr.com/en
 [MSU-1]: https://www.zeldix.net/t1607-msu1-getting-started-guide
 [snes9x]: https://github.com/gocha/snes9x-rr/releases
+
+# Buying soundtracks
+
+Many packs on this site require the purchase of a soundtrack, which you have to download before the pack setup will work. The purchase links go directly to where the soundtrack is sold, such as Bandcamp. I am not making any money from these packs, and the musicians are.
+
+It's good when musicians get paid! But if you can't pay for a pack at the moment, consider the [Cave Story][] pack, which is actually free.
+
+[Cave Story]: /packs/cave-story

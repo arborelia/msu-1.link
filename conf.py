@@ -139,11 +139,9 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/featured", "Featured packs"),
+        ("/categories/featured", "Featured packs"),
         ("/packs", "All packs"),
         ("/help", "How to use MSU-1"),
-        ("https://twitch.tv/arborelia", "Twitch"),
-        ("https://www.speedrun.com/user/arborelia", "Speedruns"),
     ),
 }
 
