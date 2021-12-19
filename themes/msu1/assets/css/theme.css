@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 /*
     Based on the Nikola base theme, which has this notice:
@@ -47,6 +49,8 @@ aside {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Tauri', sans-serif;
+	font-weight: normal;
     color: #58d;
 }
 .entry-title a {
@@ -55,14 +59,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Links */
 :link {
-	color: #282;
+	color: #272;
 	text-decoration: none;
 }
 :visited {
-	color: #282;
+	color: #272;
 }
 :link:hover, :visited:hover {
-	color: #262;
+	color: #161;
 }
 
 #brand {
@@ -96,6 +100,39 @@ pre.code, code {
 	word-wrap: normal;
 	overflow: auto;
 	background-color: #fff;
+	font-family: Inconsolata, monospace;
+}
+
+.post-in-list {
+	margin-top: 1em;
+	padding: 1em;
+	border-radius: 1em;
+	border: 2px solid #cce;
+}
+
+ul.tags {
+	display: inline;
+	padding-left: 0;
+}
+
+ul.tags li {
+	display: inline-block;
+	border-radius: 2px;
+	padding-left: 1ex;
+	padding-right: 1ex;
+	background-color: #ddd;
+}
+
+.post-in-list h2 {
+	margin-top: 0;
+}
+
+.metadata p {
+	margin: 0;
+}
+
+.linkline a {
+	font-weight: bold;
 }
 
 /* Elia hasn't messed with the stuff below */
@@ -175,12 +212,6 @@ pre.code, code {
 .postpromonav .tags {
 	text-align: center;
 }
-.metadata p:before,
-.postpromonav .tags li:before,
-.postlist .listdate:after,
-.translationslist p:before {
-	content: " — ";
-}
 .postlist li {
 	margin-bottom: .33em;
 }
@@ -210,11 +241,6 @@ pre.code, code {
 	content: "← ";
 }
 
-.metadata p:first-of-type:before,
-.postpromonav .tags li:first-of-type:before,
-.translationslist p:first-of-type:before {
-	content: "";
-}
 .postpromonav .pager {
 	clear: both;
 	height: 1em;
@@ -250,11 +276,6 @@ pre.code, code {
 .archivenav .pager .disabled:link {
     color: #888;
     cursor: not-allowed;
-}
-
-.metadata p,
-.translationslist p {
-	display: inline;
 }
 
 #brand :link,
@@ -424,7 +445,6 @@ pre.code .err, .highlight pre .err { border: 0 } /* override ugly errors, especi
 	}
 
 	article .entry-title a[href]:after,
-	article .metadata a[href]:after,
 	article .tags a[href]:after {
 		content: "";
 	}

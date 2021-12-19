@@ -17,10 +17,10 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "arborelia"  # (translatable)
-BLOG_TITLE = "msu1.link"  # (translatable)
+BLOG_TITLE = "msu-1.link"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://msu1.link/"
+SITE_URL = "http://msu-1.link/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://arborelia.net/"
@@ -140,6 +140,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/categories/featured", "Featured packs"),
+        ("/authors/arborelia", "arborelia's packs"),
         ("/packs", "All packs"),
         ("/help", "How to use MSU-1"),
     ),
@@ -217,9 +218,9 @@ THEME_CONFIG = {
 #     )
 
 POSTS = (
-    ("packs/*.md", "packs", "post.tmpl"),
-    ("packs/*.txt", "packs", "post.tmpl"),
-    ("packs/*.html", "packs", "post.tmpl"),
+    ("packs/*.md", "", "post.tmpl"),
+    ("packs/*.txt", "", "post.tmpl"),
+    ("packs/*.html", "", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.md", "", "page.tmpl"),
@@ -366,7 +367,7 @@ SHOW_BLOG_TITLE = True
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
-# TAG_PAGES_ARE_INDEXES = False
+TAG_PAGES_ARE_INDEXES = False
 
 # Set descriptions for tag pages to make them more interesting. The
 # default is no description. The value is used in the meta description
@@ -379,12 +380,14 @@ SHOW_BLOG_TITLE = True
 # }
 
 # Set special titles for tag pages. The default is "Posts about TAG".
-# TAG_TITLES = {
-#    DEFAULT_LANG: {
-#        "blogging": "Meta-posts about blogging",
-#        "open source": "Posts about open source software"
-#    },
-# }
+TAG_TITLES = {
+   DEFAULT_LANG: {
+       "arborelia": "arborelia's packs",
+       "free": "Free packs",
+       "purchase": "Packs that use purchased soundtracks",
+       "featured": "Featured packs"
+   },
+}
 
 # If you do not want to display a tag publicly, you can mark it as hidden.
 # The tag will not be displayed on the tag list page and posts.
@@ -550,7 +553,7 @@ FRONT_INDEX_HEADER = {
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
 # Create one large archive instead of per-year
-# CREATE_SINGLE_ARCHIVE = False
+CREATE_SINGLE_ARCHIVE = True
 # Create year, month, and day archives each with a (long) list of posts
 # (overrides both CREATE_MONTHLY_ARCHIVE and CREATE_SINGLE_ARCHIVE)
 # CREATE_FULL_ARCHIVES = False
@@ -565,7 +568,7 @@ FRONT_INDEX_HEADER = {
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / DAY / index.html
 # (translatable)
 # ARCHIVE_PATH = ""
-# ARCHIVE_FILENAME = "archive.html"
+ARCHIVE_FILENAME = "packs/index.html"
 
 # If ARCHIVES_ARE_INDEXES is set to True, each archive page which contains a list
 # of posts will contain the posts themselves. If set to False, it will be just a
@@ -1109,18 +1112,18 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # """
 
 # Show link to source for the posts?
-# SHOW_SOURCELINK = True
+SHOW_SOURCELINK = False
 # Copy the source files for your pages?
 # Setting it to False implies SHOW_SOURCELINK = False
 # COPY_SOURCES = True
 
 # Modify the number of Post per Index Page
 # Defaults to 10
-# INDEX_DISPLAY_POST_COUNT = 10
+INDEX_DISPLAY_POST_COUNT = 50
 
 # By default, Nikola generates RSS files for the website and for tags, and
 # links to it.  Set this to False to disable everything RSS-related.
-# GENERATE_RSS = True
+GENERATE_RSS = False
 
 # By default, Nikola does not generates Atom files for indexes and links to
 # them. Generate Atom for tags by setting TAG_PAGES_ARE_INDEXES to True.
@@ -1274,7 +1277,7 @@ TWITTER_CARD = {
     'use_twitter_cards': True,  # enable Twitter Cards
     'card': 'summary',          # Card type, you can also use 'summary_large_image',
                                 # see https://dev.twitter.com/cards/types
-    'site': 'msu1.link',        # twitter nick for the website
+    'site': 'msu-1.link',        # twitter nick for the website
     'creator': '@arborelia',    # Username for the content creator / author.
 }
 

@@ -1,0 +1,34 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.tmpl"/>
+<%namespace name="helper" file="post_helper.tmpl"/>
+<%namespace name="archive_nav" file="archive_navigation_helper.tmpl" import="*"/>
+<%namespace name="feeds_translations" file="feeds_translations_helper.tmpl" import="*"/>
+
+<%block name="extra_head">
+    ${feeds_translations.head(kind=kind, rss_override=False)}
+</%block>
+
+<%block name="content">
+<article class="listpage">
+    %if title != "Archive":
+    <header>
+        <h1>${title|h}</h1>
+    </header>
+    %endif
+    ${archive_nav.archive_navigation()}
+    ${feeds_translations.translation_link(kind)}
+    %if posts:
+    <div class="postlist">
+    % for post in posts:
+        <div class="post-in-list">
+            <h2><a href="${post.permalink()}" class="listtitle">${post.title()|h}</a></h2>
+            <p>${post.description()}</p>
+            ${helper.html_tags(post)}
+        </div>
+    % endfor
+    </div>
+    %else:
+    <p>${messages("Nothing found.")}</p>
+    %endif
+</article>
+</%block>
