@@ -7,7 +7,7 @@ title: Celeste + Farewell
 type: pack
 author: arborelia
 musicians: Lena Raine, Kevin Regamey, Maxo, 2 Mello, in love with a ghost, Ben Prunty, Christa Lee, Jukio Kallio, Matthewせいじ
-released: 2021-03-18
+released: 2021-12-20
 version: 1
 tracks: 56
 link: https://arborelia.net/downloads/celeste-farewell-msu.zip
