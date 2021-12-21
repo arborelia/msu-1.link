@@ -1,0 +1,33 @@
+## -*- coding: utf-8 -*-
+<%inherit file="list_post.tmpl"/>
+<%namespace name="feeds_translations" file="feeds_translations_helper.tmpl" import="*"/>
+<%namespace name="helper" file="post_helper.tmpl"/>
+
+<%block name="extra_head">
+    ${feeds_translations.head(author, kind, rss_override=False)}
+</%block>
+
+<%block name="content">
+<article class="authorpage">
+    <header>
+        <h1>Packs by ${author|h}</h1>
+        %if description:
+            <p>${description}</p>
+        %endif
+        <div class="metadata">
+            ${feeds_translations.feed_link(author, kind)}
+        </div>
+    </header>
+    %if posts:
+    <div class="postlist">
+    % for post in posts:
+        <div class="post-in-list">
+            <h2><a href="${post.permalink()}" class="listtitle">${post.title()|h}</a></h2>
+            <p>${post.description()}</p>
+            ${helper.html_tags(post)}
+        </div>
+    % endfor
+    </div>
+    %endif
+</article>
+</%block>

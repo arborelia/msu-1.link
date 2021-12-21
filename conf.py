@@ -23,8 +23,7 @@ BLOG_TITLE = "msu-1.link"  # (translatable)
 SITE_URL = "http://msu-1.link/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "https://arborelia.net/"
-# BLOG_EMAIL = "elia@arborelia.net"
+BLOG_EMAIL = "elia@arborelia.net"
 BLOG_DESCRIPTION = "Music mods for A Link to the Past Randomizer"  # (translatable)
 
 # Nikola is multilingual!
@@ -139,7 +138,6 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/categories/featured", "Featured packs"),
         ("/authors/arborelia", "arborelia's packs"),
         ("/packs", "All packs"),
         ("/help", "How to use MSU-1"),
@@ -382,7 +380,8 @@ TAG_PAGES_ARE_INDEXES = False
 # Set special titles for tag pages. The default is "Posts about TAG".
 TAG_TITLES = {
    DEFAULT_LANG: {
-       "arborelia": "arborelia's packs",
+       "Extended MSU": "Packs with Extended MSU features",
+       "pcm": "Packs with ready-to-use .pcm files",
        "free": "Free packs",
        "purchase": "Packs that use purchased soundtracks",
        "featured": "Featured packs"
@@ -634,7 +633,7 @@ REDIRECTIONS = []
 # in a `nikola deploy` command as you like.
 DEPLOY_COMMANDS = {
     'default': [
-        "rsync -rav --delete output/ arborelia.net:/home/ubuntu/site/arborelia.net",
+        "rsync -rav --delete output/ arborelia.net:/home/ubuntu/site/msu-1.link",
     ]
 }
 

@@ -2,18 +2,29 @@
 date: 2021-03-18
 description: Chiptune music from Studio Pixel's "Cave Story".
 slug: cave-story
-tags: featured, Extended MSU, free
+tags: Extended MSU, free
 title: Cave Story
 type: pack
 author: arborelia
 musicians: Daisuke Amaya (Pixel)
 released: 2021-03-18
 version: 1.2
-tracks: 51
+tracks: 44
 link: http://arborelia.net/downloads/cave-story-msu-1.2.zip
 ---
 
-This pack is free and ready to play!
+This pack is free! It includes mp3s extracted from freeware editions of Cave Story, which are converted into the appropriate uncompressed .pcm files when you run the setup batch script.
+
+# Setting up this pack from the first time
+
+This pack contains Qwertymodo's [MSUPCM++][msupcm] tool, a JSON configuration file for it, and a batch file that runs the setup on Windows.
+
+[msupcm]: https://github.com/qwertymodo/msupcmplusplus
+
+To set up this pack:
+
+- [Download](http://arborelia.net/downloads/cave-story-msu-1.2.zip) and unzip this pack
+- Run `Cave Story Pack Builder.bat`
 
 # Track list
 

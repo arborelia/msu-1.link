@@ -3,13 +3,13 @@ date: 2021-09-08
 released: 2021-09-08
 description: "Lena Raine's soundtrack to \"Chicory: A Colorful Tale\"."
 slug: chicory
-tags: featured, Extended MSU, purchase
+tags: Extended MSU, purchase
 title: "Chicory: A Colorful Tale"
 type: pack
 author: arborelia
 musicians: Lena Raine
 version: 1.2
-tracks: 61
+tracks: 58
 link: http://arborelia.net/downloads/chicory-msu-v1.2.zip
 ---
 
