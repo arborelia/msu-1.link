@@ -140,6 +140,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/authors/arborelia", "arborelia's packs"),
         ("/packs", "All packs"),
+        ("/submit", "Submit a pack"),
         ("/help", "How to use MSU-1"),
     ),
 }

@@ -6,7 +6,7 @@ tags: Extended MSU, pcm
 title: TMNT Retro Collection
 type: pack
 author: Moocow1980
-musicians: Jun Funahashi
+musicians: Jun Funahashi, others
 released: 2021-12-23
 version: 1
 tracks: 42
@@ -87,5 +87,4 @@ Bosses
 56 - Thieves' Town      ----- TMNTA2 Boss Battle
 57 - Turtle Rock        ----- TMNTA2 Boss Battle
 58 - Ganon's Tower      ----- TMNT3 Brain Teaser (Krang's Theme)
-
 ```
