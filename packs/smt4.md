@@ -2,14 +2,14 @@
 title: Shin Megami Tensei IV
 description: Ryota Koduka and Tsukasa Masuko's classic soundtrack to Shin Megami Tensei IV.
 slug: smt4
-date: 2021-11-19
-released: 2021-11-19
+date: 2019-11-19
+released: 2019-11-19
 type: pack
 tags: Extended MSU, pcm
 author: AaronDobbe
 musicians: Ryota Koduka and Tsukasa Masuko
 version: 2
-tracks: 44
+tracks: 52
 link: https://drive.google.com/file/d/1RujU79MJGuGQk9Wzp5wx7-2__6CNLkqQ/view
 ---
 
