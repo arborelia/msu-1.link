@@ -1,5 +1,5 @@
 ---
-date: 2021-01-24
+date: 2024-08-06
 description: Replace the ALttP music with orchestrated equivalents from A Link Between Worlds.
 slug: albw
 tags: Extended MSU
@@ -7,26 +7,52 @@ title: A Link Between Worlds
 type: pack
 author: arborelia
 musicians: Ryo Nagamatsu, Koji Kondo
-released: 2021-01-24
-version: 2.2
+released: 2024-08-06
+version: 3.0
 tracks: 54
-link: http://arborelia.net/downloads/albw-msu-v2.2.zip
+link: http://arborelia.net/downloads/albw-msu-v3.zip
 page: https://msu-1.link/albw
 ---
 
-This pack is created from the [official ALBW soundtrack][ost] to provide full sound quality.
-
 # Setting up this pack for the first time
 
-This pack needs to be uncompressed into .pcm form. On Windows, you can run `ALBW Pack Builder.bat` to create the .pcm files you'll need.
+On Windows, you can run `ALBW Pack Builder.bat` to create the PCM files you'll need.
 
 Or you can run `msupcm.exe msu_albw.json` at the command line, or drag and drop
 `msu_albw.json` onto `msupcm.exe`. All of these do the same thing.
 
-msupcm.exe is a copy of msupcm++, by qwertymodo. The source code is available at <https://github.com/qwertymodo/msupcmplusplus>.
+msupcm.exe is a copy of msupcm++, by qwertymodo. The source code (which also runs on
+Linux) is available at https://github.com/qwertymodo/msupcmplusplus.
+
+
+# What is MSU-1?
+
+[MSU-1][] is a custom co-processor for the SNES that allows it to play CD-quality
+audio. It was designed long after the SNES era, so it never existed in an official
+game cartridge, but it's implemented in modern SNES interfaces such as sd2snes,
+and emulators such as [Snes9x][].
+
+[MSU-1]: https://www.zeldix.net/t1607-msu1-getting-started-guide
+
+
+# Playing ALttP with this pack
+
+Put your ROM from the ALttP Randomizer in this folder. Name it "msu_albw.sfc".
+Run it with [Snes9x][] 1.60 or later. (The music will be choppy on 1.55.)
+
+[Snes9x]: https://github.com/gocha/snes9x-rr/releases
+
+You can also use a vanilla ROM of ALttP if you apply its MSU patch. However, the
+vanilla game doesn't support unique music per dungeon.
+
+If you see directions telling you to disable music in the randomizer settings,
+those directions are old and won't work. Music should be _enabled_.
 
 
 # Some features of this pack
+
+Unlike the original ALBW pack (which predates extended MSU-1 support in the randomizer),
+this pack has unique music for most dungeons.
 
 Where possible, I made use of the different variations on themes that appear in ALBW:
 
@@ -46,6 +72,30 @@ Where possible, I made use of the different variations on themes that appear in 
 
 - ALBW has a lot of battle themes for different situations, and I was able to use them to
   give almost every boss in ALttP a unique theme, with the Lorule boss theme used twice.
+
+
+# Improvements over previous versions
+
+Version 1.0 of this pack (from January 4, 2021) relied on the 3DS audio rips of the
+soundtrack that could be found on KHInsider and YouTube. The biggest problem with these
+was that they included game noises over the music, or cut off the beginnings of tracks.
+
+To make this version, I purchased and ripped the official Japanese soundtrack CD, giving
+me pristine versions of the game music, higher-quality recordings, and coverage of more
+tracks.
+
+The change from 2.0 to 2.1 is that I renamed the tracks to match the English titles
+on the European release, instead of them being my own guesses at a translation from
+Japanese. This doesn't change the audio at all, it just makes me feel that I'm no
+longer adding to the proliferation of inconsistent, confusing track names.
+
+In version 2.2 I reduced the overall volume level by 3 dB.
+
+In version 3.0, I replaced "Hyrule Castle Battle Theme" with "Peaceful Hyrule Castle",
+to avoid bullshit Content-ID claims against the Hyrule Castle theme when publishing
+videos on YouTube.
+
+
 
 # Track list
 
@@ -71,7 +121,7 @@ from the European release.
 13  Dark Death Mountain     2-02 Scaling Death Mountain
 14  Minigame                1-24 Hyrule Hotfoot
 15  Skull Woods overworld   1-39 Deeper Into the Lost Woods
-16  Hyrule Castle           1-42 Hyrule Castle Battle Theme
+16  Hyrule Castle           1-17 Peaceful Hyrule Castle
 17  (vanilla) LW dungeon    1-20 The 3 Dungeons of Hyrule
 18  Cave 1                  2-16 Dungeon - The Dark Palace
 19  Boss victory            1-22 Beating the Boss
@@ -127,3 +177,15 @@ music so it would finish at the length of the ALttP credits. And though in most
 cases I appreciated the OST's clean recordings without sound effects, in the case
 of the credits, I edited the sound of birds surrounding the pedestal back in.
 Birds are nice.
+
+
+# Previous versions
+
+- Version 2.0: <http://arborelia.net/downloads/albw-msu-v2.0.zip>
+- Version 2.2: <http://arborelia.net/downloads/albw-msu-v2.2.zip>
+
+
+# About me
+
+My Twitch channel is <https://twitch.tv/arborelia>. I play a lot of modes of
+ALttPR and many other randomizers. You can follow me on Cohost as [arborelia](https://cohost.org/arborelia).
